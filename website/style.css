@@ -1,0 +1,119 @@
+body, #header, .author, .messageBody, .date, .embedTitle {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #303030;
+    display: grid;
+    grid-template-columns: 20vw 60vw 20vw;
+    overflow: hidden;
+}
+input:focus {
+    outline: none;
+}
+#interactive-part {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 2%;
+    background-color: #464647;
+    height: 100vh;
+}
+#header {
+    border-bottom-style: solid;
+    color: white;
+    border-color: black;
+    border-width: 1px;
+    font-size: 5vmin;
+}
+#userInputBox::placeholder {
+    color: #acacad;
+}
+#userInputBox {
+    display: block;
+    position: absolute;
+    top: 94vh;
+    background-color: #64686e;
+    color: white;
+    font-size: 3vmin;
+    border-radius: 5%;
+    width: 55vw;
+    justify-self: center;
+    margin: 0 auto;
+    left: 22vw;
+    border: none;
+    height: 6vh;
+}
+#messageArea {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 87vh;
+}
+.message {
+    display: grid;
+    grid-template-columns: 10% auto auto;
+    grid-template-rows: repeat(2, auto);
+    color: white;
+    font-size: 3vmin;
+    padding-left: 2%;
+    margin-bottom: 2%;
+}
+.message:hover {
+    background-color: #575757;
+}
+.author {
+    font-size: 3vmin;
+    color: white;
+}
+.messageBody {
+    grid-area: 2 / 2;
+    width: 100%;
+}
+.icon {
+    border-radius: 100%;
+    margin-top: 20%;
+    max-width: 65%;
+    height: auto;
+}
+#credits {
+    color: white;
+    text-align: center;
+}
+#githubIcon {
+    display: block;
+    background-color: white;
+    max-width: 50%;
+    height: auto;
+    cursor: pointer;
+    margin: 0 auto;
+}
+#discordIcon {
+    max-width: 50%;
+    height: auto;
+    cursor: pointer;
+}
+.nameTime {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.date {
+    color: #acacad;
+    font-size: 2vmin;
+    margin-left: 5%;
+}
+.embedMessage {
+    border-left: 3px solid #4ea8de;
+    padding-left: 3%;
+    font-size: 2.5vmin;
+}
+.embedTitle, .embedSubtitle {
+    font-weight: bold;
+}
+.embedTitle {
+    font-size: 3vmin;
+}
+.embedInfo {
+    width: 90%;
+}

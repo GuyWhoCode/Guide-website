@@ -1,0 +1,27 @@
+{
+  "name": "web-guide",
+  "version": "1.0.0",
+  "description": "Website to showcase the Guide Bot",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fuse.js": "^6.4.6",
+    "jaro-winkler": "^0.2.8",
+    "mongodb": "^3.6.9",
+    "nodemon": "^2.0.9",
+    "socket.io": "^4.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuyWhoCode/Guide-website.git"
+  },
+  "author": "GuyWhoCodes",
+  "bugs": {
+    "url": "https://github.com/GuyWhoCode/Guide-website/issues"
+  },
+  "homepage": "https://github.com/GuyWhoCode/Guide-website#readme"
+}
